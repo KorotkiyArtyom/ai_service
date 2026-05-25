@@ -192,7 +192,6 @@ body {
     line-height: 1.6;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    white-space: pre-wrap;
     hyphens: auto;
 }
 
