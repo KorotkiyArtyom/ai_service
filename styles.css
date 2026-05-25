@@ -225,6 +225,9 @@ body {
     outline: none;
     resize: none;
     font-family: inherit;
+    height: 60px;
+    max-height: 60px;
+    overflow-y: auto;
 }
 
 .message-input::placeholder {
