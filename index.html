@@ -93,7 +93,13 @@
         </div>
     </div>
 
+    <script src="auth.js"></script>
     <script>
+        // Проверка авторизации перед доступом к чату
+        if (!checkAuth()) {
+            window.location.href = 'login.html';
+        }
+
         // Create stars background
         function createStars() {
             const starsContainer = document.getElementById('stars');
@@ -127,6 +133,7 @@
             // Add user message
             addMessage(message, 'user');
             input.value = '';
+            input.style.height = 'auto'; // Сброс высоты
 
             // Simulate AI response (replace with actual API call)
             setTimeout(() => {
@@ -169,6 +176,11 @@
                     </div>
                 </div>
             `;
+        }
+
+        // Logout function - переименована чтобы избежать конфликта
+        function doLogout() {
+            logout();
         }
 
         // Initialize
