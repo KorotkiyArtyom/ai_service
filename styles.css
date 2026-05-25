@@ -187,7 +187,7 @@ body {
 
 .message-content {
     max-width: 50%;
-    padding: 15px 20px;
+    padding: 0;
     border-radius: 15px;
     line-height: 1.6;
     word-wrap: break-word;
@@ -199,12 +199,14 @@ body {
 .message.user .message-content {
     background: linear-gradient(135deg, #8a2be2, #9370db);
     border-bottom-right-radius: 5px;
+    padding: 15px 20px;
 }
 
 .message.ai .message-content {
     background: rgba(138, 43, 226, 0.2);
     border: 1px solid rgba(138, 43, 226, 0.3);
     border-bottom-left-radius: 5px;
+    padding: 15px 20px;
 }
 
 .input-area {
